@@ -18,3 +18,7 @@
     check('checkbox')
     uncheck('checkbox') 
 
+# Scoping (avoid ambiguous matches)
+    within(:xpath, 'actual_xpath') do
+      fill_in 'First Name', :with => 'John'
+    end
