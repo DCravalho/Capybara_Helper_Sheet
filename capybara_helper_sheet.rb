@@ -8,6 +8,8 @@
     click_link('Link Text')
     
 # Interacting with forms 
+    attach_file('image', '/path/to/image.jpg')
+
     choose('A Radio Button')
     
     fill_in('First Name', :with => 'John')
