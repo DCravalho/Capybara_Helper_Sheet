@@ -22,3 +22,8 @@
     within(:xpath, 'actual_xpath') do
       fill_in 'First Name', :with => 'John'
     end
+
+# Debugging
+    save_and_open_page # saves current snapshot of page
+    print page.html # retrieves current state of DOM
+    save_sceenshot('screenshot.png') # saves screenshot
