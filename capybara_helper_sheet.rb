@@ -20,6 +20,11 @@
     check('checkbox')
     uncheck('checkbox') 
 
+# Matchers (boolean)
+    page.has_content('foo')
+    page.has_text('foo')
+    page.has_xpath('//table/tr')
+
 # Scoping (avoid ambiguous matches)
     within(:xpath, 'actual_xpath') do
       fill_in 'First Name', :with => 'John'
