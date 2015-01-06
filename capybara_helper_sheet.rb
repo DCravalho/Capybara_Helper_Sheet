@@ -1,5 +1,6 @@
 # Navigating 
-    visit('page_url') 
+    visit ('page_url')
+    visit(post_comments_path(post))
 
 # Clicking (buttons and links)
     click_button('Submit')
@@ -29,6 +30,14 @@
 
 # Scoping (avoid ambiguous matches)
     within(:xpath, 'actual_xpath') do
+      fill_in 'First Name', :with => 'John'
+    end
+
+    within(:css, "li#employee") do
+      fill_in 'First Name', :with => 'John'
+    end
+
+    within_fieldset('Employee') do
       fill_in 'First Name', :with => 'John'
     end
 
