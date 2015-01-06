@@ -24,6 +24,8 @@
     page.has_content('foo')
     page.has_text('foo')
     page.has_xpath('//table/tr')
+    page.should have_content('foo')
+    page.should have_no_content('foo')
 
 # Scoping (avoid ambiguous matches)
     within(:xpath, 'actual_xpath') do
