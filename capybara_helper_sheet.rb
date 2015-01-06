@@ -1,5 +1,5 @@
 # Navigating 
-    visit ('page_url')
+    visit ('login') # path to page (tacked on to end of URL, usually  defined in config file)
     visit(post_comments_path(post))
 
 # Clicking (buttons and links)
