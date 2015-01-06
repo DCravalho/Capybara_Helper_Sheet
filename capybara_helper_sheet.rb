@@ -4,9 +4,12 @@
 
 # Clicking (buttons and links)
     click_button('Submit')
+    click('Button Value')
 
     click_link('id_of_link')
     click_link('Link Text')
+
+    click('Link Text') # click either a button or a link
     
 # Interacting with forms 
     attach_file('image', '/path/to/image.jpg')
